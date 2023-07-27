@@ -16,7 +16,16 @@ You won’t have to deal with overflows. Use the atoi function
 The pall opcode
 
 The opcode pall prints all the values on the stack, starting from the top of the stack.
+1. pint
+mandatory
+Implement the pint opcode.
 
+The pint opcode
+
+The opcode pint prints the value at the top of the stack, followed by a new line.
+
+Usage: pint
+If the stack is empty, print the error message L<line_number>: can't pint, stack empty, followed by a new line, and exit with the status EXIT_FAILURE
 Usage pall
 Format: see example
 If the stack is empty, don’t print anything
