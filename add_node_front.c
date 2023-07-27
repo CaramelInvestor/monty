@@ -1,4 +1,4 @@
-#include "shanty.h"
+#include "monty.h"
 void addnodefront(stack1_t **head, const int n);
 stack1_t *addnodetoend(stack1_t **head, const int n);
 

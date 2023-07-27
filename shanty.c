@@ -1,4 +1,4 @@
-#include "shanty.h"
+#include "monty.h"
 /**
  * exitHandler - function to handle event after exit is passed
  * Return : returns NULL

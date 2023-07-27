@@ -1,4 +1,4 @@
-#include "shanty.h"
+#include "monty.h"
 
 void *readlinedata(int ln, char *_FILE);
 /**
