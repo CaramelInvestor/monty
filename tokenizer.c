@@ -23,5 +23,4 @@ char **tokenizer(char *line)
 		token = strtok(NULL, delimiters);
 	}
 	return (info.var._token);
-
 }
