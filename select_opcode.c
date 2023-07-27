@@ -4,27 +4,27 @@
  * @op_code: ======
  * Return: ====
  */
-void (*select_opcode(char *op_code[]))(stack1_t **stack,
+void (*select_opcode(char *op_code[]))(stack_t **stack,
 		unsigned int line_number)
 {
 	instruction_t opcode_funcs[] = {
-		{"push", push_func},
-		{"pall", pall_func},
-		{"pint", pint_func},
-		{"pop", pop_func},
-		{"swap", swap_func},
-		{"add", add_func},
-		{"nop", nop_func},
-		{"sub", sub_func},
-		{"mul", mul_func},
-		{"div", div_func},
-		{"mod", mod_func},
-		{"pchar", pchar_func},
-		{"pstr", pstr_func},
-		{"rotl", rotl_func},
-		{"rotr", rotr_func},
-		{"stack", stack_func},
-		{"queue", queue_func}};
+		{"push", push_handler},
+		{"pall", pall_handler},
+		{"pint", pint_handler},
+		{"pop", pop_handler},
+		{"swap", swap_handler},
+		{"add", add_handler},
+		{"nop", nop_handler},
+		{"sub", sub_handler},
+		{"mul", mul_handler},
+		{"div", div_handler},
+		{"mod", mod_handler},
+		{"pchar", pchar_handler},
+		{"pstr", pstr_handler},
+		{"rotl", rotl_handler},
+		{"rotr", rotr_handler},
+		{"stack", stack_handler},
+		{"queue", queue_handler}};
 
 	int keys = 17;
 
@@ -36,4 +36,3 @@ void (*select_opcode(char *op_code[]))(stack1_t **stack,
 
 	return (NULL);
 }
-
