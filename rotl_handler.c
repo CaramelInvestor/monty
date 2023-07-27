@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * rot1_handler - ======
+ * rotl_handler - ======
  * @stack: ========
  * @line_number: ========
  */
