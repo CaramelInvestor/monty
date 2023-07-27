@@ -1,14 +1,14 @@
 #include "monty.h"
-void print_stack(const stack1_t **h, unsigned int ln);
+void print_stack(const stack_t **h, unsigned int ln);
 /**
  * print_stack - print stack all nodes
  * @h:  interger
  * @ln: line number
  * Return: int
  */
-void print_stack(const stack1_t  **h, unsigned int ln)
+void print_stack(const stack_t  **h, unsigned int ln)
 {
-	stack1_t *curr = info.head2;
+	stack_t *curr = info.head2;
 
 	(void)h;
 	(void)ln;

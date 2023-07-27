@@ -16,8 +16,8 @@ void *readlinedata(int ln, char *_FILE)
 	int i, fileDescriptor, lineLength = 0;
 	unsigned int j = 0;
 	char **token;
-	void (*f)(stack1_t **head, unsigned int line_number);
-	stack1_t *head = NULL;
+	void (*f)(stack_t **head, unsigned int line_number);
+	stack_t *head = NULL;
 
 	/*    fileDescriptor = open(ALIAS_FILE, O_RDONLY);*/
 

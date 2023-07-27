@@ -5,7 +5,7 @@
  * @line_number: line number in file
  * Return: NULL is returned
  */
-void push_handler(stack1_t **stack, unsigned int line_number)
+void push_handler(stack_t **stack, unsigned int line_number)
 {
 	char **data = load_linked_list(line_number, info.filename);
 	*stack = info.head2;

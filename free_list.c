@@ -1,14 +1,14 @@
 #include "monty.h"
-void free_list(stack1_t *head);
+void free_list(stack_t *head);
 /**
  * free_list - ==========
  * @head: ===========
  * Return: int
  */
-void free_list(stack1_t *head)
+void free_list(stack_t *head)
 {
-	stack1_t *curr = info.head2;
-	stack1_t *temp = NULL;
+	stack_t *curr = info.head2;
+	stack_t *temp = NULL;
 	(void)head;
 
 	while (curr)
