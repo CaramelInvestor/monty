@@ -19,6 +19,7 @@ void addnodefront(stack1_t **head, const int n)
 	if (new == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
+		free_list(info.head2);
 		exit(EXIT_FAILURE);
 	}
 	new->n = n;
@@ -51,6 +52,7 @@ stack1_t *addnodetoend(stack1_t **head, const int n)
 	if (new == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
+		free_list(info.head2);
 		exit(EXIT_FAILURE);
 	}
 	new->n = n;
