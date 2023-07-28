@@ -13,7 +13,7 @@ void (*select_opcode(char *op_code[]))(stack1_t **stack,
 		{"pint", pint_handler},
 		{"pop", pop_handler},
 		{"swap", swap_handler},
-		/*{"add", add_handler},*/
+		{"add", add_handler},
 		{"nop", nop_handler},
 		{"sub", sub_handler},
 		{"mul", mul_handler},
@@ -26,7 +26,7 @@ void (*select_opcode(char *op_code[]))(stack1_t **stack,
 		{"stack", stack_handler},
 		{"queue", queue_handler}};
 
-	int keys = 16;
+	int keys = 17;
 
 	int j;
 
