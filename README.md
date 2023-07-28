@@ -51,7 +51,16 @@ The opcode swap swaps the top two elements of the stack.
 
 Usage: swap
 If the stack contains less than two elements, print the error message L<line_number>: can't swap, stack too short, followed by a new line, and exit with the status EXIT_FAILUREhe opcode pop removes the top element of the stack.
- 6. sub
+5. nop
+mandatory
+Implement the nop opcode.
+
+The nop opcode
+
+The opcode nop doesn’t do anything.
+
+Usage: nop 
+6. sub
 #advanced
 Implement the sub opcode.
 
