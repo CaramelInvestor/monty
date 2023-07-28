@@ -6,7 +6,7 @@
  * @line_number: line number of the script
  */
 
-void stack_handler(stack_t **stack, unsigned int line_number)
+void stack_handler(stack1_t **stack, unsigned int line_number)
 {
 	(void) stack;
 	(void) line_number;
