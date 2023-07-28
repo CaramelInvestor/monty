@@ -106,5 +106,5 @@ void sub_handler(stack_t **stack, unsigned int line_number);
 void swap_handler(stack_t **stack, unsigned int line_number);
 void print_stack(const stack_t **h, unsigned int ln);
 void (*select_opcode(char *op_code[]))(stack_t **s, unsigned int ln);
-void add_handler(stack_t **stack, unsigned int line_number);
+/*void add_handler(stack_t **stack, unsigned int line_number);*/
 #endif
