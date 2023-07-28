@@ -1,6 +1,6 @@
 #include "monty.h"
-void addnodefront(stack_t **head, const int n);
-stack_t *addnodetoend(stack_t **head, const int n);
+void addnodefront(stack1_t **head, const int n);
+stack1_t *addnodetoend(stack1_t **head, const int n);
 
 /**
  * addnodefront - function to add node to the front of the list
@@ -8,14 +8,14 @@ stack_t *addnodetoend(stack_t **head, const int n);
  * @n: n is the value
  * Return: list
  */
-void addnodefront(stack_t **head, const int n)
+void addnodefront(stack1_t **head, const int n)
 {
-	stack_t *curr;
-	stack_t *new = NULL;
+	stack1_t *curr;
+	stack1_t *new = NULL;
 
 	*head = info.head2;
 	curr = *head;
-	new = (stack_t *) malloc(sizeof(stack_t));
+	new = (stack1_t *) malloc(sizeof(stack1_t));
 	if (new == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
@@ -39,15 +39,15 @@ void addnodefront(stack_t **head, const int n)
  * @n: value
  * Return: stack
  */
-stack_t *addnodetoend(stack_t **head, const int n)
+stack_t *addnodetoend(stack1_t **head, const int n)
 {
-	stack_t *curr;
-	stack_t *temp;
-	stack_t *new = NULL;
+	stack1_t *curr;
+	stack1_t *temp;
+	stack1_t *new = NULL;
 
 	*head = info.head2;
 	curr = info.head2;
-	new = (stack_t *) malloc(sizeof(stack_t));
+	new = (stack1_t *) malloc(sizeof(stack1_t));
 	if (new == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
