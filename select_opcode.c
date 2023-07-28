@@ -4,7 +4,7 @@
  * @op_code: ======
  * Return: ====
  */
-void (*select_opcode(char *op_code[]))(stack_t **stack,
+void (*select_opcode(char *op_code[]))(stack1_t **stack,
 		unsigned int line_number)
 {
 	instruction_t opcode_funcs[] = {
