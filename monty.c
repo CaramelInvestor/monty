@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 	info.head2 = NULL;
 	info.err_no = 0;
 
-	atexit(exitHandler);
+	/*atexit(exitHandler);*/
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");

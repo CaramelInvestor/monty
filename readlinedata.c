@@ -64,14 +64,12 @@ void *readlinedata(int ln, char *_FILE)
 			else if (info.err_no == -2)
 			{
 				fprintf(stderr, "L%d: unknown instruction %s\n",
-				j, info.var._token[0]);
+						j, info.var._token[0]);
 			}
-				info.err_no = 0;
-				info.fileDescriptor = 0;
-				close(fileDescriptor);
-				exit(EXIT_FAILURE);
-
-			
+			info.err_no = 0;
+			info.fileDescriptor = 0;
+			close(fileDescriptor);
+			exit(EXIT_FAILURE);
 		}
 			}
 			info.err_no = 0;
