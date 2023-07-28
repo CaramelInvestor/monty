@@ -11,7 +11,7 @@ int check_opcode(char **tokens)
 		"pchar", "pstr", "rotl", "rotr", "stack", "queue"};
 	int i;
 
-	info.err_no = -1;
+	info.err_no = -2;
 	(void)tokens;
 	for (i = 0; i < 17; i++)
 		if (strcmp(opcode[i], info.var._token[0]) == 0)
