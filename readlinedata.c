@@ -16,8 +16,8 @@ void *readlinedata(int ln, char *_FILE)
 	int i, fileDescriptor, lineLength = 0;
 	unsigned int j = 0;
 	char **token;
-	void (*f)(stack_t **head, unsigned int line_number);
-	stack_t *head = NULL;
+	void (*f)(stack1_t **head, unsigned int line_number);
+	stack1_t *head = NULL;
 
 	/*    fileDescriptor = open(ALIAS_FILE, O_RDONLY);*/
 
@@ -58,14 +58,19 @@ void *readlinedata(int ln, char *_FILE)
 		else
 		{
 			if (info.err_no == -1)
+			{
 				fprintf(stderr, "L%d: usage: push integer\n", j);
+			}
 			else if (info.err_no == -2)
+			{
 				fprintf(stderr, "L%d: unknown instruction %s\n",
 				j, info.var._token[0]);
 				info.err_no = 0;
 				info.fileDescriptor = 0;
 				close(fileDescriptor);
 				exit(EXIT_FAILURE);
+
+			}
 		}
 			}
 			info.err_no = 0;

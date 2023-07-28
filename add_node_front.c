@@ -39,7 +39,7 @@ void addnodefront(stack1_t **head, const int n)
  * @n: value
  * Return: stack
  */
-stack_t *addnodetoend(stack1_t **head, const int n)
+stack1_t *addnodetoend(stack1_t **head, const int n)
 {
 	stack1_t *curr;
 	stack1_t *temp;

@@ -55,7 +55,7 @@ typedef struct stack_s
 typedef struct instruction_s
 {
 	char *opcode;
-	void (*f)(stack_t **stack, unsigned int line_number);
+	void (*f)(stack1_t **stack, unsigned int line_number);
 } instruction_t;
 
 /**
@@ -74,7 +74,7 @@ typedef struct info_t
 	char *mode;
 	int fileDescriptor;
 	token_t var;
-	stack_t *head2;
+	stack1_t *head2;
 
 } info_t;
 info_t info;
