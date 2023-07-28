@@ -41,7 +41,7 @@ typedef struct stack_s
 	int n;
 	struct stack_s *prev;
 	struct stack_s *next;
-} stack_t;
+} stack1_t;
 
 
 /**
@@ -79,32 +79,32 @@ typedef struct info_t
 } info_t;
 info_t info;
 
-void pint_handler(stack_t **stack, unsigned int line_number);
-void push_handler(stack_t **stack, unsigned int line_number);
-void div_handler(stack_t **stack, unsigned int line_number);
-void mod_handler(stack_t **stack, unsigned int line_number);
-void mul_handler(stack_t **stack, unsigned int line_number);
-void queue_handler(stack_t **stack, unsigned int line_number);
-void stack_handler(stack_t **stack, unsigned int line_number);
-void pall_handler(stack_t **stack, unsigned int line_number);
-void addnodefront(stack_t **head, const int n);
+void pint_handler(stack1_t **stack, unsigned int line_number);
+void push_handler(stack1_t **stack, unsigned int line_number);
+void div_handler(stack1_t **stack, unsigned int line_number);
+void mod_handler(stack1_t **stack, unsigned int line_number);
+void mul_handler(stack1_t **stack, unsigned int line_number);
+void queue_handler(stack1_t **stack, unsigned int line_number);
+void stack_handler(stack1_t **stack, unsigned int line_number);
+void pall_handler(stack1_t **stack, unsigned int line_number);
+void addnodefront(stack1_t **head, const int n);
 void *load_linked_list(int line_number, char *_FILE);
 void *readlinedata(int ln, char *_FILE);
 void exitHandler(void);
 int check_opcode(char **tokens);
 int check_opcode_arg(char **token);
-void free_list(stack_t *head);
+void free_list(stack1_t *head);
 char **tokenizer(char *line);
-stack_t *addnodetoend(stack_t **head, const int n);
-void nop_handler(stack_t **stack, unsigned int line_number);
-void pchar_handler(stack_t **stack, unsigned int line_number);
-void pop_handler(stack_t **stack, unsigned int line_number);
-void pstr_handler(stack_t **stack, unsigned int line_number);
-void rotl_handler(stack_t **stack, unsigned int line_number);
-void rotr_handler(stack_t **stack, unsigned int line_number);
-void sub_handler(stack_t **stack, unsigned int line_number);
-void swap_handler(stack_t **stack, unsigned int line_number);
-void print_stack(const stack_t **h, unsigned int ln);
-void (*select_opcode(char *op_code[]))(stack_t **s, unsigned int ln);
-/*void add_handler(stack_t **stack, unsigned int line_number);*/
+stack1_t *addnodetoend(stack1_t **head, const int n);
+void nop_handler(stack1_t **stack, unsigned int line_number);
+void pchar_handler(stack1_t **stack, unsigned int line_number);
+void pop_handler(stack1_t **stack, unsigned int line_number);
+void pstr_handler(stack1_t **stack, unsigned int line_number);
+void rotl_handler(stack1_t **stack, unsigned int line_number);
+void rotr_handler(stack1_t **stack, unsigned int line_number);
+void sub_handler(stack1_t **stack, unsigned int line_number);
+void swap_handler(stack1_t **stack, unsigned int line_number);
+void print_stack(const stack1_t **h, unsigned int ln);
+void (*select_opcode(char *op_code[]))(stack1_t **s, unsigned int ln);
+/*void add_handler(stack1_t **stack, unsigned int line_number);*/
 #endif
