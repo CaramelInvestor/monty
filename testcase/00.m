@@ -3,4 +3,5 @@ push 2
 push 3
 swap
 push 4
+add
 pall
