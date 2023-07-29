@@ -10,10 +10,14 @@ void push_handler(stack1_t **stack, unsigned int line_number)
 	char **data = load_linked_list(line_number, info.filename);
 	*stack = info.head2;
 	if (strcmp(info.mode, "stack") == 0)
-		addnodefront(stack, atoi(data[1]));
+	{
+		if (data[1] != NULL)
+			addnodefront(stack, atoi(data[1]));
+	}
 	else if (strcmp(info.mode, "queue") == 0)
 	{
-		addnodetoend(stack, atoi(data[1]));
+		if (data[1] != NULL)
+			addnodetoend(stack, atoi(data[1]));
 	}
 	/*	freedata(&data);*/
 }

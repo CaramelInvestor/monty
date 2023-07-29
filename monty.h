@@ -17,6 +17,7 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <stddef.h>
+#include <signal.h>
 
 /**
  * struct token_t - token struct
